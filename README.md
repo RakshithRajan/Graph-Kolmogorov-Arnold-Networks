@@ -14,6 +14,17 @@ $$
 y = \sigma(\sum_{j=1}^{d} w_j \cdot \phi_j(x))
 $$
 
+
+$$
+f(x_1, x_2, \ldots, x_n) = \sum_{q=0}^{2n+1} \Phi_q \left( \sum_{p=1}^{n} \psi_{pq}(x_p) \right)
+$$
+
+
+$$
+f(x_1, \ldots, x_n) = \Phi(g_1(x_{i1}), \ldots, g_m(x_{im}))
+$$
+
+
 where $\( \sigma \)$ is the activation function, $\( w_j \)$ are the learnable weights, $\( \phi_j \)$ are spline functions parameterized on edges, and $\( x \)$ is the input data.
 
 ## Comparison with MLPs
@@ -32,3 +43,25 @@ Multi-Layer Perceptrons (MLPs) have traditionally been the standard neural netwo
    ```bash
    git clone https://github.com/RakshithRajan/Graph-Kolmogorov-Arnold-Networks.git
    cd repository
+
+2. Install dependencies:
+
+   ```bash
+   pip install -r requirements.txt
+
+## Usage
+### Training
+   To train GKAN on the Cora dataset:
+
+      ```bash
+      python KAN.py
+
+## Dataset
+The project uses the Cora dataset from the Planetoid dataset, comprising academic papers (nodes) and citations (edges) between them.
+
+## Contributing
+Contributions are welcome! Feel free to open issues or pull requests for any improvements or additional features.
+
+## Acknowledgments
+- This project re-implements the latest paper on Kolmogorov-Arnold Networks by **Ziming Liu**, **Yixuan Wang**, **Sachin Vaidya**, **Fabian Ruehle**, **James Halverson**, **Marin Soljačić**, **Thomas Y. Hou**, and **Max Tegmark**.
+- Special thanks to the open-source community and contributors.
