@@ -10,9 +10,11 @@ Kolmogorov-Arnold Networks (KANs) are inspired by the Kolmogorov-Arnold represen
 
 The formula for a single layer in KANs is represented as follows:
 
-\[ y = \sigma(\sum_{j=1}^{d} w_j \cdot \phi_j(x)) \]
+$$
+y = \sigma(\sum_{j=1}^{d} w_j \cdot \phi_j(x))
+$$
 
-where \( \sigma \) is the activation function, \( w_j \) are the learnable weights, \( \phi_j \) are spline functions parameterized on edges, and \( x \) is the input data.
+where $\( \sigma \)$ is the activation function, $\( w_j \)$ are the learnable weights, $\( \phi_j \)$ are spline functions parameterized on edges, and $\( x \)$ is the input data.
 
 ## Comparison with MLPs
 
